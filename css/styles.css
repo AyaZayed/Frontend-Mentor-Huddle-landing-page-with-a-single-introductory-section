@@ -1,0 +1,94 @@
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-size: cover;
+  background: url(../images/bg-desktop.svg) no-repeat;
+  background-color: var(--Violet);
+  background-blend-mode: normal;
+  color: #fff;
+}
+
+header {
+  padding: 3rem 5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image {
+  flex-basis: 45%;
+}
+
+.text {
+  flex-basis: 45%;
+}
+
+.text h1 {
+  font-size: 50px;
+}
+
+.text p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.text button {
+  border: none;
+  color: var(--Violet);
+  border-radius: 20px;
+  padding: 17px 20px;
+  width: 13rem;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.social-icons {
+  align-self: flex-end;
+  display: flex;
+}
+
+.social-icons i {
+  margin: 0 0.5rem;
+  border: 1px solid #fff;
+  padding: 1rem;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--Soft-Magenta);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: #fff;
+}
