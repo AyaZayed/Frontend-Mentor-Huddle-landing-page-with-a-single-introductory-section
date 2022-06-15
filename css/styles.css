@@ -14,13 +14,12 @@ body {
 }
 
 header {
-  padding: 3rem 5rem;
+  padding: 3rem 4rem;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  padding: 0 3rem;
 }
 
 .content {
@@ -33,16 +32,23 @@ main {
 }
 
 .text {
-  flex-basis: 45%;
+  flex-basis: 40%;
+}
+
+.image img {
+  width: 100%;
 }
 
 .text h1 {
   font-size: 50px;
+  line-height: 1.5;
 }
 
 .text p {
   font-size: 18px;
   line-height: 1.5;
+  width: 90%;
+  margin-bottom: 2rem;
 }
 
 .text button {
@@ -50,22 +56,29 @@ main {
   color: var(--Violet);
   border-radius: 20px;
   padding: 17px 20px;
-  width: 13rem;
+  width: 11rem;
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
+  box-shadow: 1px 3px 10px 3px rgb(64, 47, 109);
+}
+
+.text button:hover {
+  background-color: var(--Soft-Magenta);
+  color: #fff;
 }
 
 .social-icons {
   align-self: flex-end;
   display: flex;
+  margin-right: 5rem;
 }
 
 .social-icons i {
   margin: 0 0.5rem;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   padding: 1rem;
   width: 10px;
   height: 10px;
@@ -79,9 +92,45 @@ main {
   -o-border-radius: 50%;
 }
 
+.social-icons i:hover {
+  color: var(--Soft-Magenta);
+  border-color: var(--Soft-Magenta);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .body {
+    background: url(../images/bg-mobile.svg) no-repeat;
+  }
+  .content {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3rem;
+  }
+  header {
+    padding-left: 3rem;
+  }
+  .image,
+  .text {
+    flex-basis: 100%;
+  }
+  .text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .text button {
+    width: 15rem;
+  }
+  .social-icons {
+    align-self: center;
+    margin: 6rem 0 4rem 0;
+  }
 }
 
 .attribution a {
