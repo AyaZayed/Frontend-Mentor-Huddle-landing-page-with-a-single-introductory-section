@@ -19,7 +19,7 @@ This is a solution to the [Huddle landing page with a single introductory sectio
 
 ### Links
 
-- Solution URL: [Huddle landing page with a single introductory section](https://www.frontendmentor.io/solutions/stats-preview-card-H1CdEr0r5)
+- Solution URL: [Huddle landing page with a single introductory section](https://www.frontendmentor.io/solutions/huddle-landing-page-with-a-single-introductory-section-qM3fXA8eq0)
 
 ## My process
 
